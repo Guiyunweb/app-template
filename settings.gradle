@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        maven { url "https://repo.spring.io/milestone" }
+        maven { url "https://repo.spring.io/release" }
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+    }
+}
+rootProject.name = 'app'
+
+include 'app-common'
+include 'app-framework'
+include 'org.example'
+include 'app-api'
+include 'app-project-system'
+include 'start'
+include 'app-dao'

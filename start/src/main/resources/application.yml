@@ -1,0 +1,12 @@
+server:
+  port: 8000
+
+auth:
+  token:
+    expire-time: 30
+    secret: abcdefghijklmnopqrstuvwxyz
+    header: Authorization
+  ignored:
+    urls:
+      - /auth/login
+      - /auth/test

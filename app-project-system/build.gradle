@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+version 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":app-framework")
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.0'
+}
+
+test {
+    useJUnitPlatform()
+}
